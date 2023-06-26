@@ -22,7 +22,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        background-color: rgb(43, 43, 120);
+        background-color: rgb(18, 18, 62);
         height: 8vh;
       }
       nav ul {
@@ -31,14 +31,15 @@
         align-items: center;
         list-style: none;
       }
-      nav ul li {
+      nav ul li a {
         margin: 0 20px;
         cursor: pointer;
+        color: white;
+        text-decoration: none;
       }
-      nav ul li:hover {
-        color: rgb(43, 43, 120);
-        background-color: white;
-        border-radius: 5px;
+      nav ul li a:hover {
+        color: rgb(153, 153, 255);
+        font-size: 1.02rem;
       }
       .left {
         font-size: 1.5rem;
@@ -73,11 +74,11 @@
         <div class="left">Yash's Portfolio</div>
         <div class="right">
           <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Skills</li>
-            <li>Projects</li>
-            <li>Contact</li>
+            <li><a href="home">Home</a></li>
+            <li><a href="about">About Me</a></li>
+            <li><a href="skills">Skills</a></li>
+            <li><a href="projects">Projects</a></li>
+            <li><a href="contact">Contact Me</a></li>
           </ul>
         </div>
       </nav>
@@ -87,7 +88,7 @@
       <section class="first-section">
         <div class="left-section">
           <!-- Hi, I am Yash!  -->
-          Hi, I am <span style="color: rgb(183, 77, 183)">Yash</span>!
+          Hi, I am <span style="color: rgb(153, 153, 255)">Yash</span>!
           <br />
           I am a Full Stack Web Developer.
         </div>
