@@ -13,37 +13,58 @@
         margin: 0;
         padding: 0;
       }
-        body {
-            font-family: "Poppins", sans-serif;
-            background-color: rgb(0, 0, 35);
-            color: white;
-        }
-      nav{
-        display:flex;
-        justify-content:space-around;
-        align-items:center;
-        background-color:rgb(43, 43, 120);
-        height:8vh;
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: rgb(0, 0, 35);
+        color: white;
       }
-      nav ul{
-        display:flex;
-        justify-content:space-around;
-        align-items:center;
-        list-style:none;
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgb(43, 43, 120);
+        height: 8vh;
       }
-        nav ul li{
-            margin:0 20px;
-            cursor:pointer;
-        }
-        nav ul li:hover{
-            color:rgb(43, 43, 120);
-            background-color:white;
-            border-radius:5px;
-        }
-        .left{
-            font-size:1.5rem;
-            font-weight:600;
-        }
+      nav ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+      }
+      nav ul li {
+        margin: 0 20px;
+        cursor: pointer;
+      }
+      nav ul li:hover {
+        color: rgb(43, 43, 120);
+        background-color: white;
+        border-radius: 5px;
+      }
+      .left {
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+
+      .first-section {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 23px 0;
+      }
+      .first-section div {
+        width: 40%;
+        text-align: center;
+        line-height: 2;
+      }
+
+      .left-section {
+        font-size: 2rem;
+        font-weight: 600;
+      }
+      .right-section img {
+        width: 60%;
+        margin: 50px auto;
+      }
     </style>
   </head>
   <body>
@@ -61,5 +82,19 @@
         </div>
       </nav>
     </header>
+
+    <main>
+      <section class="first-section">
+        <div class="left-section">
+          <!-- Hi, I am Yash!  -->
+          Hi, I am <span style="color: rgb(183, 77, 183)">Yash</span>!
+          <br />
+          I am a Full Stack Web Developer.
+        </div>
+        <div class="right-section">
+          <img src="bg.png" alt="" />
+        </div>
+      </section>
+    </main>
   </body>
 </html>
