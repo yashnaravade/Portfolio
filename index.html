@@ -66,6 +66,9 @@
         width: 60%;
         margin: 50px auto;
       }
+      #element {
+        color: rgb(153, 153, 255);
+      }
     </style>
   </head>
   <body>
@@ -90,12 +93,22 @@
           <!-- Hi, I am Yash!  -->
           Hi, I am <span style="color: rgb(153, 153, 255)">Yash</span>!
           <br />
-          I am a Full Stack Web Developer.
+          I am a Passionate
+          <br><span id="element">
+          </span>
         </div>
         <div class="right-section">
           <img src="bg.png" alt="" />
         </div>
       </section>
     </main>
+    
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed('#element', {
+        strings: ['Full Stack Developer', 'Instructor', 'Research Analyst', 'Programmer'],
+        typeSpeed: 50,
+      });
+    </script>
   </body>
 </html>
